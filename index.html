@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoLog.AI 다운로드</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background:#4a90e2; color:white; padding:30px; text-align:center; }
+    section { max-width:900px; margin:40px auto; padding:30px; background:white; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    h1,h2 { margin-top:0; }
+    .download-btn { display:inline-block; padding:14px 28px; margin-top:20px; background:#4a90e2; color:white; text-decoration:none; border-radius:6px; font-weight:bold; }
+    .download-btn:hover { background:#357ab8; }
+    footer { text-align:center; padding:20px; background:#eee; margin-top:40px; }
+    ul { line-height:1.8; }
+    pre { background:#f4f4f4; padding:10px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AutoLog.AI</h1>
+    <p>AI 기반 로그 요약 및 작업 기록 도구</p>
+  </header>
+
+  <section>
+    <h2>앱 소개</h2>
+    <p>
+      AutoLog.AI는 PC에서 오피스(Word, Excel, PowerPoint)와 메모장 저장 이벤트를 실시간으로 감지하여,
+      <strong>Gemini 온라인 AI</strong> 또는 <strong>로컬 AI(Ollama 설치 모델)</strong>로 내용을 자동 요약합니다.
+      요약된 결과는 앱 내부에 저장되며, <strong>Notion</strong>으로도 자동 전송할 수 있습니다.
+    </p>
+    <ul>
+      <li>실시간 자동 감지: 문서 저장 시 즉시 기록</li>
+      <li>AI 요약: Gemini(온라인) 또는 Ollama 모델(로컬)</li>
+      <li>지원 로컬 모델: llama3, gemma2:2b, qwen2.5:1.5b</li>
+      <li>자동 저장 및 Notion 전송</li>
+      <li>작업 일지 자동 기록</li>
+    </ul>
+
+    <h2>다운로드</h2>
+    <p>아래 버튼을 클릭하여 최신 버전을 다운로드하세요.</p>
+    <a href="다운로드_링크_여기에" class="download-btn">다운로드</a>
+
+    <h2>설치 안내</h2>
+    <ol>
+      <li>온라인 AI 사용 시: Gemini API 키를 설정창에 입력하세요.</li>
+      <li>로컬 AI 사용 시: <a href="https://ollama.com/download">Ollama</a>를 설치하세요.</li>
+      <li>CMD에서 원하는 모델을 설치합니다:
+        <pre>
+ollama pull llama3
+ollama pull gemma2:2b
+ollama pull qwen2.5:1.5b
+        </pre>
+      </li>
+      <li>AutoLog.AI 실행 후 설정창에서 온라인/로컬 AI를 선택하세요.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>© 2026 AutoLog.AI | 문의: support@autolog.ai</p>
+  </footer>
+</body>
+</html>
